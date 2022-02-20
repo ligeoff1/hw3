@@ -8,27 +8,29 @@
             </p>
 
             <p>
+                <%=  post.posted_on%>
+            </p>
+            
+            <p>
                 <%=  post.description%>
             </p>
 
-            <p>
-                <%=  post.posted_on%>
-            </p>
+
         </li>
     <%end%>
 
 </ul>
 
 <p>
-<a href="/places/new?place_id=<%= @place.id %>"> Add place </a>
+<a href="/posts/new?place_id=<%= @place.id %>"> New Post </a>
 </p>
 
 <p>
-<a href="/posts/new?place_id=<%= @place.id %>"> Add post </a>
+<a href="/places/new?place_id=<%= @place.id %>"> New Place </a>
 </p>
 
 <p>
-<a href="/places">Back to all places</a>
+<a href="/places">Back to All Places</a>
 </p>
 
 
