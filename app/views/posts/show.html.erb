@@ -1,0 +1,8 @@
+<h1><%= @post.title %></h1>
+
+<ul>
+  <li><%= @post.name %></li>
+  <li><%= @post.description %></li>
+</ul>
+
+<p><a href="/places/<%= @post.places.id %>">Back to <%= @post.place.name %></a></p>
